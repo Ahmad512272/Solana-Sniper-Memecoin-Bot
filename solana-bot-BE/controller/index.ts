@@ -1,9 +1,9 @@
 import { Metaplex } from "@metaplex-foundation/js";
+import { Connection, PublicKey } from "@solana/web3.js";
 import { solanaConnection } from "../config";
 import { poolModel } from "../model"
 import { pools } from "../sockets"
 import { logger } from "../utils"
-import { PublicKey } from "@solana/web3.js";
 
 export const saveNewPool = async (poolId: string, poolState: string) => {
     try {
